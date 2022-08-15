@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import logo from '../../assets/logos/logo.svg'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
     const handlerIconOnclick = () => {
@@ -15,29 +16,29 @@ function Header() {
                     <div className='menu__body'>
                         <ul className='menu__list'>
                             <li>
-                                <a href='' className='menu__link'>
+                                <NavLink end to='/' className='menu__link'>
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href='' className='menu__link'>
+                                <NavLink to='/about-us' className='menu__link'>
                                     About Us
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href='' className='menu__link'>
+                                <NavLink to='/our-projects' className='menu__link'>
                                     Our projects
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href='' className='menu__link'>
+                                <NavLink to='/our-products' className='menu__link'>
                                     Our products
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href='' className='menu__link'>
+                                <NavLink to='/contact' className='menu__link'>
                                     Contact
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logos/logo.svg'
 import primaryfoot1 from '../../assets/primary-foot-1.svg'
 import primaryfoot2 from '../../assets/primary-foot-2.svg'
@@ -20,29 +21,29 @@ function Footer() {
                             <nav className='footer__menu menu-footer'>
                                 <ul className='menu-footer__list'>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/' className='menu-footer__link'>
                                             Home
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/about-us' className='menu-footer__link'>
                                             About Us
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/our-projects' className='menu-footer__link'>
                                             Our projects
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/our-products' className='menu-footer__link'>
                                             Our products
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/contact' className='menu-footer__link'>
                                             Contact
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </nav>
@@ -62,12 +63,16 @@ function Footer() {
                             <nav className='footer__menu menu-footer'>
                                 <ul className='menu-footer__list'>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/about-us' className='menu-footer__link'>
                                             About Us
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <a
+                                            href='https://en.wikipedia.org/wiki/IEC_60364'
+                                            className='menu-footer__link'
+                                            target='_blank'
+                                        >
                                             The standarts
                                         </a>
                                     </li>
@@ -98,9 +103,9 @@ function Footer() {
                             <nav className='footer__menu menu-footer menu-footer_mb'>
                                 <ul className='menu-footer__list'>
                                     <li className='menu-footer__li'>
-                                        <a href='#' className='menu-footer__link'>
+                                        <NavLink to='/contact' className='menu-footer__link'>
                                             Contact
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </nav>
@@ -110,12 +115,12 @@ function Footer() {
                                 by us, as well as the prices for equipment sold
                             </p>
                             <div className='column-top__button button-price'>
-                                <a href='#'>
-                                    Download price
+                                <NavLink to='/pricelist'>
+                                    Our prices
                                     <span className='button-price__container'>
                                         <span className='button-price__chevron'></span>
                                     </span>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -124,14 +129,14 @@ function Footer() {
                             <ul className='footer__connect-links footer__connect-links_left'>
                                 <li>
                                     <a
-                                        href='https://www.facebook.com'
+                                        href='https://www.se.com/'
                                         className='footer__icon-schnaider'
                                         target='_blank'
                                     ></a>
                                 </li>
                                 <li>
                                     <a
-                                        href='https://www.linkedin.com'
+                                        href='https://www.obo.pl/'
                                         className='footer__icon-obo'
                                         target='_blank'
                                     ></a>
@@ -165,9 +170,9 @@ function Footer() {
                         </div>
                     </div>
                     <p className='footer__copyright'>
-                        © 2020 AndriiChernyi |<a href='#'>Privacy Policy</a>
+                        © 2022 AndriiChernyi |<a href='#'> Privacy Policy</a>
                     </p>
-                    <p className='footer__modified'> Page last modified on January 25, 2022 </p>
+                    <p className='footer__modified'> Page last modified on July 25, 2022 </p>
                 </div>
             </div>
         </footer>

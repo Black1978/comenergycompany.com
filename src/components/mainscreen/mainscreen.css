@@ -10,7 +10,6 @@
     left: 50%;
     transform: translate(-50%);
     width: 97%;
-    /* max-width: 1920px; */
     height: 100%;
     overflow: hidden;
 }
@@ -64,6 +63,9 @@
     cursor: pointer;
 }
 @media (max-width: 767px) {
+    .main-screen {
+        margin-top: 75px;
+    }
     .main-screen__bg {
         width: 100%;
     }

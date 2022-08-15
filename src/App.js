@@ -7,6 +7,9 @@ import OurProducts from './pages/OurProducts'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Contact from './pages/Contact'
+import Pricelist from './pages/Pricelist'
+import BestSellingGoods from './pages/BestSellingGoods'
+import LastProjects from './pages/LastProjects'
 import { useEffect } from 'react'
 
 function App() {
@@ -27,9 +30,7 @@ function App() {
                 <Router>
                     <Header />
                     <Switch>
-                        <Route path='/' exact>
-                            <Home />
-                        </Route>
+                        <Route path='/' exact component={Home} />
                         <Route path='/about-us' component={AboutUs} />
                         <Route path='/our-projects'>
                             <OurProjects />
@@ -39,6 +40,15 @@ function App() {
                         </Route>
                         <Route path='/contact'>
                             <Contact />
+                        </Route>
+                        <Route path='/pricelist'>
+                            <Pricelist />
+                        </Route>
+                        <Route path='/bestsellinggoods'>
+                            <BestSellingGoods />
+                        </Route>
+                        <Route path='/lastprojects'>
+                            <LastProjects />
                         </Route>
                     </Switch>
                     <Footer />
